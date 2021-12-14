@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 
-const projectID = '1b7801d6-8a66-4be4-a442-89219d833dfc';
+const projectID = '24ac6534-8c22-47b3-ba76-9816458ddf92';
 
 const Modal = () => {
   const [username, setUsername] = useState('');
@@ -15,7 +15,6 @@ const Modal = () => {
 
     try {
       await axios.get('https://api.chatengine.io/chats', { headers: authObject });
-
       localStorage.setItem('username', username);
       localStorage.setItem('password', password);
 
